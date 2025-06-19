@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/logo25nico.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Pizzería Nico</title>
+    <style></style>
+  </head>
+  <body>
+    <header class="header-pizza">
+      <picture class="cont-logopizza"
+        ><img src="assets/img/logo25nico.png" alt="Logo pizzeria"
+      /></picture>
+      <h1>Pizzería y rotiseria Nico. Más de 25 años</h1>
+    </header>
+    <nav>
+      <button onclick="mostrarSeccion('pizzas')">Pizzas</button>
+      <button onclick="mostrarSeccion('empanadas')">Empanadas</button>
+      <button onclick="mostrarSeccion('comidaRapida')">Minutas</button>
+      <button onclick="mostrarSeccion('pastas')">Pastas</button>
+    </nav>
+    <!-- Comienza seccion pizza -->
+    <section id="pizzas" class="active">
+      <div class="item">
+        <div class="item-info">
+          <img src="assets/img/muzza.jpg" alt="Muzzarella" /><span
+            >Pizza Muzzarella - $9000</span
+          >
+        </div>
+        <button onclick="agregarAlCarrito('Pizza Muzzarella', 9000)">
+          +
+        </button>
+      </div>
+      <div class="item">
+        <div class="item-info">
+          <img src="assets/img/napolitana.jpg" alt="Napolitana" /><span
+            >Pizza Napolitana - $10500</span
+          >
+        </div>
+        <button onclick="agregarAlCarrito('Pizza Napolitana', 10500)">
+          +
+        </button>
+      </div>
+      <div class="item">
+        <div class="item-info">
+          <img src="assets/img/especial.jpg" alt="Especial" /><span
+            >Pizza Especial - $11500</span
+          >
+        </div>
+        <button onclick="agregarAlCarrito('Pizza Especial', 11500)">
+          +
+        </button>
+      </div>
+      <div class="item">
+        <div class="item-info">
+          <img src="assets/img/napojamon.jpg" alt="Napolitana" /><span
+            >Pizza napo con jamon - $10500</span
+          >
+        </div>
+        <button onclick="agregarAlCarrito('Pizza Napolitana con jamón', 11000)">
+          +
+        </button>
+      </div>
+      <div class="item">
+        <div class="item-info">
+          <img src="assets/img/jamon.jpg" alt="Napolitana" /><span
+            >Pizza Jamón - $10000</span
+          >
+        </div>
+        <button onclick="agregarAlCarrito('Pizza Jamon', 10000)">
+          +
+        </button>
+      </div>
+      <div class="item">
+        <div class="item-info">
+          <img src="assets/img/choclo.jpg" alt="Napolitana" /><span
+            >Pizza Choclo - $12000</span
+          >
+        </div>
+        <button onclick="agregarAlCarrito('Pizza choclo', 12000)">
+          +
+        </button>
+      </div>
+      <div class="item">
+        <div class="item-info">
+          <img src="https://via.placeholder.com/50" alt="Napolitana" /><span
+            >Pizza Verdura - $12000</span
+          >
+        </div>
+        <button onclick="agregarAlCarrito('Pizza verdura', 12000)">
+          +
+        </button>
+      </div>
+      <div class="item">
+        <div class="item-info">
+          <img src="https://via.placeholder.com/50" alt="Napolitana" /><span
+            >Pizza Bomba - $15000</span
+          >
+        </div>
+        <button onclick="agregarAlCarrito('Pizza bomba', 15000)">
+          +
+        </button>
+      </div>
+    </section>
+    <!-- Termina seccoin pizzaas -->
+
+    <!-- Empieza seccion empanadas -->
+    <section id="empanadas">
+      <div class="item">
+        <div class="item-info">
+          <img src="https://via.placeholder.com/50" alt="Empanada Carne" /><span
+            >12 Empanadas comunes - $15500</span
+          >
+        </div>
+        <button onclick="agregarAlCarrito('12 Empanadas comunes', 16000)">
+          +
+        </button>
+      </div>
+      <div class="item">
+        <div class="item-info">
+          <img src="https://via.placeholder.com/50" alt="Empanada Carne" /><span
+            >12 Empanadas especiales - $15500</span
+          >
+        </div>
+        <button onclick="agregarAlCarrito('Empanada de carne', 400)">
+          +
+        </button>
+      </div>
+      <div class="item">
+        <div class="item-info">
+          <img src="https://via.placeholder.com/50" alt="Empanada Carne" /><span
+            >6 Empanadas comunes - $15500</span
+          >
+        </div>
+        <button onclick="agregarAlCarrito('Empanada de carne', 400)">
+          +
+        </button>
+      </div>
+      <div class="item">
+        <div class="item-info">
+          <img src="https://via.placeholder.com/50" alt="Empanada Pollo" /><span
+            >6 Empanadas especiales - $7500</span
+          >
+        </div>
+
+        <button onclick="agregarAlCarrito('Empanada de pollo', 400)">
+          +
+        </button>
+      </div>
+      <div class="item">
+        <div class="item-info">
+          <img src="https://via.placeholder.com/50" alt="Empanada Pollo" /><span
+            >Empanada unidad - $7500</span
+          >
+        </div>
+
+        <button onclick="agregarAlCarrito('Empanada de pollo', 400)">
+          +
+        </button>
+      </div>
+    </section>
+
+    <!-- Termina seccion empanadas -->
+
+    <!-- Empieeza seccion rapido -->
+    <section id="comidaRapida">
+      <div class="item">
+        <div class="item-info">
+          <img src="assets/img/milapizz.jpg" alt="Hamburguesa" /><span
+            >Milapizza - $17000</span
+          >
+        </div>
+        <button onclick="agregarAlCarrito('Hamburguesa', 17000)">+</button>
+      </div>
+      <div class="item">
+        <div class="item-info">
+          <img src="https://via.placeholder.com/50" alt="Pancho" /><span
+            >Napolitana con guarnición - $9500</span
+          >
+        </div>
+        <button onclick="agregarAlCarrito('Napo con guarnición', 9500)">+</button>
+      </div>
+      <div class="item">
+        <div class="item-info">
+          <img src="https://via.placeholder.com/50" alt="Pancho" /><span
+            >Milanesa con guarnición - $700</span
+          >
+        </div>
+        <button onclick="agregarAlCarrito('Pancho', 700)">+</button>
+      </div>
+      <div class="item">
+        <div class="item-info">
+          <img src="https://via.placeholder.com/50" alt="Pancho" /><span
+            >Suprema con guarnición - $700</span
+          >
+        </div>
+        <button onclick="agregarAlCarrito('Pancho', 700)">+</button>
+      </div>
+      <div class="item">
+        <div class="item-info">
+          <img src="https://via.placeholder.com/50" alt="Pancho" /><span
+            >Tortilla de papas - $700</span
+          >
+        </div>
+        <button onclick="agregarAlCarrito('Pancho', 700)">+</button>
+      </div>
+      <div class="item">
+        <div class="item-info">
+          <img src="https://via.placeholder.com/50" alt="Pancho" /><span
+            >Tortilla de verdura - $700</span
+          >
+        </div>
+        <button onclick="agregarAlCarrito('Pancho', 700)">+</button>
+      </div>
+
+      <!-- Termina seccion rapido -->
+
+      <!-- Empieza seccion pastas -->
+    </section>
+    <section id="pastas">
+      <div class="item">
+        <div class="item-info">
+          <img src="https://via.placeholder.com/50" alt="Ñoquis" /><span
+            >Ñoquis estofado - $7300</span
+          >
+        </div>
+        <button onclick="agregarAlCarrito('Ñoquis', 1300)">+</button>
+      </div>
+       <div class="item">
+        <div class="item-info">
+          <img src="https://via.placeholder.com/50" alt="Ñoquis" /><span
+            >Ñoquis bolognesa - $1300</span
+          >
+        </div>
+        <button onclick="agregarAlCarrito('Ñoquis', 1300)">+</button>
+      </div>
+       <div class="item">
+        <div class="item-info">
+          <img src="https://via.placeholder.com/50" alt="Ñoquis" /><span
+            >Tallarines con estofado - $1300</span
+          >
+        </div>
+        <button onclick="agregarAlCarrito('Ñoquis', 1300)">+</button>
+      </div>
+       <div class="item">
+        <div class="item-info">
+          <img src="https://via.placeholder.com/50" alt="Ñoquis" /><span
+            >Tallarines con bolognesa - $1300</span
+          >
+        </div>
+        <button onclick="agregarAlCarrito('Ñoquis', 1300)">+</button>
+      </div>
+      <div class="item">
+        <div class="item-info">
+          <img
+            src="https://via.placeholder.com/50"
+            alt="Fideos con tuco"
+          /><span>Ravioles con salsa - $1300</span>
+        </div>
+        <button onclick="agregarAlCarrito('Fideos con tuco', 1300)">
+          +
+        </button>
+      </div>
+      <div class="item">
+        <div class="item-info">
+          <img
+            src="https://via.placeholder.com/50"
+            alt="Fideos con tuco"
+          /><span>Ñoquis con salsa - $1300</span>
+        </div>
+        <button onclick="agregarAlCarrito('Fideos con tuco', 1300)">
+          +
+        </button>
+      </div>
+      <div class="item">
+        <div class="item-info">
+          <img
+            src="https://via.placeholder.com/50"
+            alt="Fideos con tuco"
+          /><span>Canelones con bolognesa - $1300</span>
+        </div>
+        <button onclick="agregarAlCarrito('Fideos con tuco', 1300)">
+          +
+        </button>
+      </div>
+      <div class="item">
+        <div class="item-info">
+          <img
+            src="https://via.placeholder.com/50"
+            alt="Fideos con tuco"
+          /><span>Canelones con estofado - $1300</span>
+        </div>
+        <button onclick="agregarAlCarrito('Fideos con tuco', 1300)">
+          +
+        </button>
+      </div>
+    </section>
+
+    <!-- Termina seccion pastas -->
+
+    <!-- Coiena carrito -->
+
+    <div class="carrito">
+      <h3>Tu Pedido</h3>
+      <ul id="listaCarrito"></ul>
+      <button class="btn-whatsapp" onclick="enviarPedidoWhatsApp()">
+        Enviar por WhatsApp
+      </button>
+    </div>
+
+    <footer>
+      <p>
+        Todos los derechos reservados. Página desarrollada por
+        <a href="">Nicolas Jofre &reg;</a>
+      </p>
+    </footer>
+
+    <!-- Termin carrito -->
+    <script>
+      const carrito = [];
+
+      function mostrarSeccion(id) {
+        document
+          .querySelectorAll("section")
+          .forEach((s) => s.classList.remove("active"));
+        document.getElementById(id).classList.add("active");
+      }
+
+      function agregarAlCarrito(nombre, precio) {
+        const index = carrito.findIndex((p) => p.nombre === nombre);
+        if (index > -1) {
+          carrito[index].cantidad++;
+        } else {
+          carrito.push({ nombre, precio, cantidad: 1 });
+        }
+        actualizarCarrito();
+      }
+
+      function actualizarCarrito() {
+        const lista = document.getElementById("listaCarrito");
+        lista.innerHTML = "";
+        carrito.forEach((item, index) => {
+          const li = document.createElement("li");
+          li.innerHTML = `
+          ${item.nombre} x${item.cantidad} - $${item.precio * item.cantidad}
+          <div class="cantidad-control">
+            <button onclick="cambiarCantidad(${index}, -1)">-</button>
+            <button onclick="cambiarCantidad(${index}, 1)">+</button>
+            <button onclick="eliminarItem(${index})">🗑️</button>
+          </div>`;
+          lista.appendChild(li);
+        });
+      }
+
+      function cambiarCantidad(index, cambio) {
+        carrito[index].cantidad += cambio;
+        if (carrito[index].cantidad <= 0) {
+          carrito.splice(index, 1);
+        }
+        actualizarCarrito();
+      }
+
+      function eliminarItem(index) {
+        carrito.splice(index, 1);
+        actualizarCarrito();
+      }
+
+      function enviarPedidoWhatsApp() {
+        const telefono = "5491157208353"; // tu número sin + ni espacios
+        if (carrito.length === 0) return alert("Tu carrito está vacío.");
+        const mensaje = encodeURIComponent(
+          "Hola! Quisiera hacer el siguiente pedido:\n" +
+            carrito
+              .map(
+                (item) =>
+                  `${item.nombre} x${item.cantidad} - $${
+                    item.precio * item.cantidad
+                  }`
+              )
+              .join("\n")
+        );
+        const url = `https://wa.me/${telefono}?text=${mensaje}`;
+        window.open(url, "_blank");
+      }
+    </script>
+  </body>
+</html>
